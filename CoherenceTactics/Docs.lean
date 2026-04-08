@@ -19,6 +19,8 @@ tag := "index"
 
 Author: Yuma Mizuno
 
+Source repository: [yuma-mizuno/coherence-tactics](https://github.com/yuma-mizuno/coherence-tactics)
+
 This note explains two tactics in Lean:
 {name Mathlib.Tactic.Monoidal.monoidal}`monoidal`
 for equalities of morphisms in monoidal categories, and
