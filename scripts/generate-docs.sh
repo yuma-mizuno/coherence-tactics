@@ -4,4 +4,4 @@ set -euo pipefail
 repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$repo_root"
 
-lake env lean --run CoherenceTacticsDocsMain.lean "$@"
+lake exe coherence-tactics-docs "$@"
