@@ -31,6 +31,9 @@ jobs:
           use-mathlib-cache: true
           use-github-cache: true
 
+      - name: Fetch build caches
+        run: lake exe cache get
+
       - name: Build docs site
         run: bash ./scripts/generate-docs.sh
 
