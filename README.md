@@ -1,6 +1,8 @@
 # Coherence Tactics for Monoidal Categories and Bicategories in Lean
 
 This is a manual for mathlib's coherence tactics: `monoidal` for monoidal categories and `bicategory` for bicategories.
+The manual is available here:
+[https://yuma-mizuno.github.io/coherence-tactics/](https://yuma-mizuno.github.io/coherence-tactics/).
 
 ## Setup
 
