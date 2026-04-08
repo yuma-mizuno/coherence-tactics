@@ -65,10 +65,7 @@ $$`
 ((\cdots ((I \otimes X_1) \otimes X_2) \otimes \cdots) \otimes X_n).
 `
 
-These are the normalized objects.
-
-For the source object in the example above, the normalization is
-
+For example, the normalization of the source object in the example above is
 $$`
 [((a \otimes (b \otimes (I \otimes c))) \otimes d) \otimes e]
 = ((((I \otimes a) \otimes b) \otimes c) \otimes d) \otimes e.
@@ -91,7 +88,7 @@ $$`
 
 for atomic $`A`.
 
-At the same time one defines a normalization isomorphism
+At the same time we define a normalization isomorphism
 
 $$`
 \nu_{N,X} : N \otimes X \xrightarrow{\cong} [N \otimes X].
@@ -117,8 +114,7 @@ $$`
 N \otimes A \xrightarrow{\mathrm{id}} N \otimes A = [N \otimes A]
 `
 
-where $`A` is atomic. The three cases remove a terminal unit, reassociate and continue the
-recursive normalization through a tensor product, or leave an atomic factor unchanged.
+where $`A` is atomic.
 
 The key lemma is that a canonical composite built from associators and unitors does not affect the
 result of normalization. If $`f : X \cong Y` is built only from associators and unitors, then the
