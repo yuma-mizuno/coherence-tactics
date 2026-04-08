@@ -25,13 +25,3 @@ This repository includes a GitHub Pages workflow at
 [`./.github/workflows/deploy_github_pages.yml`](./.github/workflows/deploy_github_pages.yml).
 On pushes to `main` or `master`, it builds the manual and publishes `_out/html-multi/` as the
 Pages artifact.
-
-## Citation
-
-```bibtex
-@misc{CoherenceTacticsLean,
-  author = {Yuma Mizuno},
-  title = {Coherence Tactics for Monoidal Categories and Bicategories in Lean},
-  year = {2026},
-}
-```
