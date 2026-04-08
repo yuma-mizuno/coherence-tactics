@@ -14,11 +14,9 @@ open scoped MonoidalCategory
 
 namespace CoherenceTactics.Examples
 
--- ANCHOR: monoidalCoherencePure
-example {C : Type*} [Category C] [MonoidalCategory C] :
+theorem unitors_equal {C : Type*} [Category C] [MonoidalCategory C] :
     (λ_ (𝟙_ C)).hom = (ρ_ (𝟙_ C)).hom := by
   monoidal_coherence
--- ANCHOR_END: monoidalCoherencePure
 
 abbrev tensorμ {C : Type*} [Category C] [MonoidalCategory C] [BraidedCategory C]
     (X₁ X₂ Y₁ Y₂ : C) :
@@ -29,7 +27,6 @@ abbrev tensorμ {C : Type*} [Category C] [MonoidalCategory C] [BraidedCategory C
         (X₁ ◁ (α_ Y₁ X₂ Y₂).hom) ≫
           (α_ X₁ Y₁ (X₂ ⊗ Y₂)).inv
 
--- ANCHOR: monoidalCalc
 theorem monoidal_calc {C : Type*} [Category C] [MonoidalCategory C] [BraidedCategory C]
     (X₁ X₂ X₃ Y₁ Y₂ Y₃ : C) :
     tensorμ (X₁ ⊗ X₂) X₃ (Y₁ ⊗ Y₂) Y₃ ≫
@@ -52,7 +49,6 @@ theorem monoidal_calc {C : Type*} [Category C] [MonoidalCategory C] [BraidedCate
     _ = _ := by
       rw [← BraidedCategory.braiding_tensor_left_hom]
       monoidal
--- ANCHOR_END: monoidalCalc
 
 theorem monoidal_calc_step₁ {C : Type*} [Category C] [MonoidalCategory C] [BraidedCategory C]
     (X₁ X₂ X₃ Y₁ Y₂ Y₃ : C) :

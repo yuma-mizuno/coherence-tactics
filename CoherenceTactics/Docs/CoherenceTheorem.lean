@@ -49,7 +49,8 @@ Mac Lane's coherence theorem says that one does not need to impose all of those 
 
 The {name Mathlib.Tactic.Monoidal.pureCoherence}`monoidal_coherence` tactic is a direct implementation of this theorem. It proves that any two composites built only from associators and unitors with the same source and target are equal.
 
-```CoherenceTactics.leanAnchor monoidalCoherencePure -showProofStates
+```CoherenceTactics.leanDecl (module := CoherenceTactics.Examples)
+CoherenceTactics.Examples.unitors_equal
 ```
 
 {docstring Mathlib.Tactic.Monoidal.pureCoherence}

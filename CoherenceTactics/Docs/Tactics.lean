@@ -80,7 +80,8 @@ intermediate goals in which only the coherence data differ.
 
 The monoidal example below shows this pattern explicitly:
 
-```CoherenceTactics.leanAnchor monoidalCalc -showProofStates
+```CoherenceTactics.leanDecl (module := CoherenceTactics.Examples)
+CoherenceTactics.Examples.monoidal_calc
 ```
 
 The visible rewrites come from the braiding lemmas and the exchange law, while
