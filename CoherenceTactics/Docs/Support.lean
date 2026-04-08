@@ -1,0 +1,7 @@
+import CoherenceTactics.Examples
+import CoherenceTactics.LeanDecl
+import CoherenceTactics.References
+import CoherenceTactics.VersoStringDiagram
+import Mathlib.Tactic.CategoryTheory.Bicategory.Basic
+import Mathlib.Tactic.CategoryTheory.Monoidal.Basic
+import VersoManual
