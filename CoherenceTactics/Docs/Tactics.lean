@@ -133,7 +133,7 @@ This chapter explains what is added by
 {name Mathlib.Tactic.Monoidal.monoidal}`monoidal`
 and
 {name Mathlib.Tactic.Bicategory.bicategory}`bicategory`
-when a goal contains actual maps.
+when a goal contains actual maps, not merely those constructed from associators and unitors.
 The extra work is to rearrange each side until those maps can be compared directly, leaving only
 coherence equalities for the previous chapter.
 
@@ -158,9 +158,8 @@ and
 support this function by supplying the equality proofs needed at each recursive step.
 
 Normalization means
-separating two kinds of data in the composite. The actual maps, such as `f`, `g`, `η`, and `ε`,
-stay in the same order. Everything built only from associators, unitors, identities, and
-whiskering is pushed into the coherence pieces around them.
+separating two kinds of data in the composite. The actual maps
+stay in the same order. Associators and unitors are pushed into the coherence pieces around them.
 The target shape is an alternating composite
 
 $$`
